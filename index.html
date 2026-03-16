@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Chemistry Overview</title>
+  
+</head>
+<body>
+
+    <canvas id="bgCanvas"></canvas>
+
+    <nav>
+        <div class="logo">Chemistry Overview</div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#courses">Courses</a>
+            <a href="#features">Features</a>
+            <a href="#formulas">Formulas</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <section id="home">
+        <div class="container">
+            <div class="glass-card">
+                <span class="tag" style="background: var(--accent);">V2.0 LIVE</span>
+                <h1>Master the <br><span style="color: var(--primary);">Molecular</span> World.</h1>
+                <p>Chemistry Overview is an open-source interactive platform designed for chemists, researchers, and students. Experience high-performance 2D simulations of molecular interactions and atomic structures directly in your browser.</p>
+                <div style="display: flex; gap: 1rem;">
+                    <button class="btn" onclick="location.href='#courses'">Explore Courses</button>
+                    <button class="btn" style="background: transparent; border: 1px solid white;" onclick="spawnMatter()">Inject Atoms</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="courses">
+        <div class="container">
+            <h2>Specialized Courses</h2>
+            <div class="grid">
+                <div class="item-card">
+                    <span class="tag" style="background: #4facfe;">Beginner</span>
+                    <h3>Organic Chemistry I</h3>
+                    <p>Focus on carbon-based compounds, nomenclature, and functional groups. Essential for pre-med students.</p>
+                </div>
+                <div class="item-card">
+                    <span class="tag" style="background: #f093fb;">Intermediate</span>
+                    <h3>Quantum Chemistry</h3>
+                    <p>Understanding electron probability clouds and Schrödinger's equation through visual simulations.</p>
+                </div>
+                <div class="item-card">
+                    <span class="tag" style="background: #f6d365; color: black;">Advanced</span>
+                    <h3>Thermodynamics</h3>
+                    <p>Energy transfer, enthalpy, entropy, and the laws governing chemical equilibrium.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="container">
+            <div class="glass-card">
+                <h2>Laboratory Features</h2>
+                <div class="grid">
+                    <div class="stat-card">
+                        <h4 style="color: var(--primary);">Real-time Rendering</h4>
+                        <p>Utilizing WebGL and Canvas API for 60FPS molecular movement and collision detection.</p>
+                    </div>
+                    <div class="stat-card">
+                        <h4 style="color: var(--primary);">Variable Bonding</h4>
+                        <p>Simulate Ionic, Covalent, and Metallic bonding with adjustable electronegativity sliders.</p>
+                    </div>
+                    <div class="stat-card">
+                        <h4 style="color: var(--primary);">Interactive Periodic Table</h4>
+                        <p>Directly inject elements from the periodic table into the sandbox to see reactive properties.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="formulas">
+        <div class="container">
+            <h2>Essential Formulas</h2>
+            <p>A quick-reference guide for the most common calculations used in our simulations.</p>
+            <div class="glass-card" style="padding: 1rem;">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Concept</th>
+                            <th>Formula</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ideal Gas Law</td>
+                            <td class="formula-font">PV = nRT</td>
+                            <td>Relationship between Pressure, Volume, and Temp.</td>
+                        </tr>
+                        <tr>
+                            <td>Molarity</td>
+                            <td class="formula-font">M = n / V</td>
+                            <td>Moles of solute per liter of solution.</td>
+                        </tr>
+                        <tr>
+                            <td>Gibbs Free Energy</td>
+                            <td class="formula-font">ΔG = ΔH - TΔS</td>
+                            <td>Predicts the spontaneity of a reaction.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="grid" style="grid-template-columns: 1fr 1fr;">
+                <div>
+                    <h2>Get in Touch</h2>
+                    <p>Have questions about the simulations or want to contribute to the open-source repo? Send our lab a message.</p>
+
+                    <p><strong>Location:</strong> Digital Space, GitHub</p>
+                </div>
+                <div class="glass-card">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Full Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email Address">
+                        </div>
+                        <div class="form-group">
+                            <textarea rows="5" placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="button" class="btn" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
