@@ -4,7 +4,7 @@ A simple educational chemistry website that helps students understand basic chem
 
 ---
 
-## 🌍 Live Demo                                                
+## 🌍 Live Demo                                               
 
 🔗 https://mr-danix.github.io/chemistry/
 
